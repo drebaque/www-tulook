@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+	<title>Lista de categorias</title>
+	<meta charset='utf-8'>
+  </head>
+	<section>
+		<h1>{{categoria.nombre}}</h1>
+		<div id='descripcion'>
+			<h2>Descripción</h2>
+			<p>{{categoria.descripcion}}</p>
+		</div>
+		<div id='productos'>
+			<h2>Productos de esta categoría</h2>
+				{% for elemento in productos %}
+					<p><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></p>
+				{% empty %}
+					<p>Sin productos registrados</p>					
+				{% endfor %}
+		</div>
+	</section>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+	<title>Datos de la empresa</title>
+	<meta charset='utf-8'>
+  </head>
+  <body>
+    <h1>Datos de la empresa</h1>
+	{% for elemento in lista %}
+	<ul>
+	  <li><strong>{{elemento.razonsocial}}</strong></li>
+	  <li>{{elemento.nfantasia}}</li>
+	  <li>{{elemento.cuit}}</li>
+	  <li>{{elemento.direccion}}</li>
+	  <li>{{elemento.email}}</li>
+	  <li>{{elemento.horarios}}</li>
+	  <li>{{elemento.linkgooglemaps}}</li>
+	</ul>
+	{% endfor %}
+  </body>
+</html>
