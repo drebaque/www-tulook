@@ -1,9 +1,9 @@
-Hi there,
+Hola Natacha,
 
-You have receive a contact request.
+Has recibido una solicitud de contacto.
 
-Name: {{ name }}
+Nombre: {{ name }}
 Email: {{ email }}
-Message: {{ body }}
+Mensaje: {{ body }}
 
-Have a great day!
+Que tengas un excelente día!

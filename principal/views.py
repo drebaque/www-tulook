@@ -6,7 +6,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 
 def inicio(request):
-	#  productos = Producto.objects.all()
+	productos = Producto.objects.all()
 	return render_to_response('inicio.html')
 
 def productos(request):
@@ -36,10 +36,16 @@ def detalle_categorias_productos(request, id_categoria):
 
 def detalle_producto(request, id_producto):
 	dato = get_object_or_404(Producto, pk=id_producto)
-
 	return render_to_response('producto.html',{'producto':dato}, context_instance=RequestContext(request))
-
 
 def lista_marcas(request):
 	marca = Marca.objects.all()
 	return render_to_response('lista_marcas.html',{'marca':marca})
+
+def tratamientos(request):
+	productos = Producto.objects.filter(categoria__nombre='TRATAMIENTOS')
+	return render_to_response('tratamientos.html',{'productos':productos})
+
+def servicios(request):
+	productos = Producto.objects.filter(categoria__nombre='SERVICIOS')
+	return render_to_response('servicios.html',{'productos':productos})

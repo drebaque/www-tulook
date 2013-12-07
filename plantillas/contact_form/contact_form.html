@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang='es'>
-<h1>"Contact Form" </h1>
-<p> "This is the contact form"</p>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<h1>"Contactase con Tu Look" </h1>
+<p> "Por favor, complete los datos y lo contactaremos. Muchas Gracias."</p>
 
 <form action="" method="post">{% csrf_token %}
 	<p>{{ form.as_ul }}</p>
-		<input type="submit" value="Contact Us"/>
+		<input type="submit" value="Contactar"/>
 </form>
 
 </html>

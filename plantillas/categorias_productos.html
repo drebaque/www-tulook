@@ -13,7 +13,9 @@
 		<div id='productos'>
 			<h2>Productos de esta categoría</h2>
 				{% for elemento in productos %}
-					<p><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></p>
+					<ul>
+						<li><p><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></p></li>
+					</ul>
 				{% empty %}
 					<p>Sin productos registrados</p>					
 				{% endfor %}
