@@ -5,12 +5,12 @@ from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 
-def inicio(request):
-	productos = Producto.objects.all()
-	return render_to_response('inicio.html')
+def index(request):
+	marca = Marca.objects.all()
+	return render_to_response('index.html',{'marca':marca})
 
 def productos(request):
-	productos = Producto.objects.all()
+	productos = Producto.objects.exclude(categoria__nombre__in=['TRATAMIENTOS','TERAPIAS','SERVICIOS'])
 	return render_to_response('productos.html',{'productos':productos})
 
 def lista_productos(request):
@@ -46,6 +46,14 @@ def tratamientos(request):
 	productos = Producto.objects.filter(categoria__nombre='TRATAMIENTOS')
 	return render_to_response('tratamientos.html',{'productos':productos})
 
+def terapias(request):
+	productos = Producto.objects.filter(categoria__nombre='TERAPIAS')
+	return render_to_response('terapias.html',{'productos':productos})
+
 def servicios(request):
 	productos = Producto.objects.filter(categoria__nombre='SERVICIOS')
 	return render_to_response('servicios.html',{'productos':productos})
+
+def promociones(request):
+	promociones = Promo.objects.all()
+	return render_to_response('promociones.html',{'promociones':promociones})

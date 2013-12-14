@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='es'>
 	<header>
-		<title>Inicio</title>
+		<title>Terapias</title>
 		<meta charset='utf-8'>
 		<nav>
 			<ul>
@@ -17,14 +17,12 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
-		<h1>Empresas que nos acompañan</h1>
-		{% for elemento in marca %}
-			<ul>
-				<li><strong>{{elemento.nombre}}</strong></li>
-				<li>{{elemento.descripcion}}</li>
-				<li><img src='{{elemento.logo}}'></li>
-			</ul>
+  <body>
+    <h1>Nuestras Terapias</h1>
+	<ul>
+		{% for elemento in productos %}
+			<li><p><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></p></li>
 		{% endfor %}
-	</body>
+	</ul>
+  </body>
 </html>

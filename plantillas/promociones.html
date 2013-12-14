@@ -13,52 +13,50 @@
     
     <header class="row">
 		<nav class="top-bar" data-topbar>
-	        <ul class="title-area">
-	          <li class="name">
-	            <h1>
-	              <a href="#">
-	                Tu look
-	              </a>
-	            </h1>
-	          </li>
-	          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-	        </ul>
-	        <div class="top-bar-section">
-	          <ul class="right">
+			<ul class="title-area">
+				<li class="name">
+				<h1>
+					<a href="/inicio">Tu look</a>
+				</h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+			</ul>
+			<div class="top-bar-section">
+			<ul class="right">
 				<li><a href="/productos">Productos</a></li>
 				<li><a href="/servicios">Servicios</a></li>
 				<li><a href="/tratamientos">Tratamientos</a></li>
 				<li><a href="/terapias">Terapias</a></li>
 				<li><a href="/promociones">Promociones</a></li>				
 				<li><a href="/contacto">Contacto</a></li>
-	          </ul>
-	        </div>
-     	</nav>
+				</ul>
+			</div>
+		</nav>
 		<div class="row">
 			<div class="large-12 columns">
-				<img src="http://placehold.it/1600x600&text=Productos">
+				<img src="http://placehold.it/1600x600&text=Promociones">
 			</div>
 		</div>
     </header>
 
     <main>
     	<section class="row">
-    	<h1>Nuestros Productos</h1>
+    	<h1>Nuestras Promociones</h1>
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-              		{% for elemento in productos %}
+              		{% for elemento in promociones %}
 						<li><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</li>
 					{% endfor %}
 					<!--
-					<li><a href="">Nombre producto 1</a></li>
-					<li><a href="">Nombre producto 2</a></li>
-					<li><a href="">Nombre producto 3</a></li>
-					<li><a href="">Nombre producto 4</a></li>
-					<li><a href="">Nombre producto 5</a></li>
-					<li><a href="">Nombre producto 6</a></li>
-					<li><a href="">Nombre producto 7</a></li>
-					<li><a href="">Nombre producto 8</a></li>-->
+					<li><strong>Nombre Promoción 1</strong></li>
+					<li><strong>Nombre Promoción 2</strong></li>
+					<li><strong>Nombre Promoción 3</strong></li>
+					<li><strong>Nombre Promoción 4</strong></li>
+					<li><strong>Nombre Promoción 5</strong></li>
+					<li><strong>Nombre Promoción 6</strong></li>
+					<li><strong>Nombre Promoción 7</strong></li>
+					<li><strong>Nombre Promoción 8</strong></li>-->
 				</ul>
             </div>
           </div>

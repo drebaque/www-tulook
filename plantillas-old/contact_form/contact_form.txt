@@ -1,0 +1,9 @@
+Hola Natacha,
+
+Has recibido una solicitud de contacto.
+
+Nombre: {{ name }}
+Email: {{ email }}
+Mensaje: {{ body }}
+
+Que tengas un excelente día!

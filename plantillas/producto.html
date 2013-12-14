@@ -1,19 +1,82 @@
-<!DOCTYPE html>
-<html lang='es'>
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-	<title>{{producto.nombre}}</title>
-	<meta charset='utf-8'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu look</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/modernizr.js"></script>
   </head>
-	<section>
-		<h1>{{producto.nombre}}</h1>
-		<div id='descripcion'>
-			<h2>Descripción</h2>
-			<p>{{producto.descripcion}}</p>
-			<p>Precio: {{producto.precio}}</p>
-			<p>Categoría a la que pertenece: {{producto.categoria.nombre}}</p>
-			<p>Marca: {{producto.marca.nombre}}</p>
-			<p>{{producto.marca.logo}}</p>			
-		</div>
+  <body>
+    
+    <header class="row">
+		<nav class="top-bar" data-topbar>
+	        <ul class="title-area">
+	          <li class="name">
+	            <h1>
+	              <a href="#">
+	                Tu look
+	              </a>
+	            </h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+	        </ul>
+	        <div class="top-bar-section">
+	          <ul class="right">
+				<li><a href="/productos">Productos</a></li>
+				<li><a href="/servicios">Servicios</a></li>
+				<li><a href="/tratamientos">Tratamientos</a></li>
+				<li><a href="/terapias">Terapias</a></li>
+				<li><a href="/promociones">Promociones</a></li>				
+				<li><a href="/contacto">Contacto</a></li>
+	          </ul>
+	        </div>
+     	</nav>
+    </header>
 
-	</section>
+    <main>
+    	<section class="row producto">
+    		<div class="large-6 columns">
+    			<br>
+    			<!--img src=""-->
+		    	<img src="img/404.jpg">
+    		</div>
+    		<div class="large-6 columns">
+		    	<h1>{{producto.nombre}}</h1>	
+		    	<h1>Nombre producto</h1>
+		    	<div class="panel">
+		    		<p>{{producto.descripcion}}</p>
+					<p>Precio: {{producto.precio}}</p>
+					<p>Categoría a la que pertenece: {{producto.categoria.nombre}}</p>
+					<p>Marca: {{producto.marca.nombre}}</p>
+					<p>{{producto.marca.logo}}</p>
+		    		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit soluta veniam tempora temporibus repellat molestias nihil dicta.</p>
+					<p><span>Precio:</span> $100</p>
+					<p><span>Categoría:</span> categoría a</p>
+					<p><span>Marca:</span> Marca X</p>
+					<p>Logo</p>-->
+		    	</div>
+    		</div>
+    	</section>
+    </main>
+
+	<footer class="row">
+	    <div class="large-12 columns">
+	      <hr />
+	      <div class="row">
+	        <div class="large-6 columns">
+	          <p>Tu look - 2013</p>
+	        </div>
+	      </div>
+	    </div>
+	</footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>

@@ -47,7 +47,6 @@ class Promo(models.Model):
 	precio = models.CharField(max_length=15, default="Consultar") #se puede poner por default: Consultar - y en alguna promo el valor que se desee
 	fechainicio = models.DateField()
 	fechafinalizacion = models.DateField()
-	# producto = models.ForeignKey(Producto, related_name='promo_producto')
 	prodpromo = models.ManyToManyField(Producto, blank=True, null=True)
 
 	def __unicode__(self):

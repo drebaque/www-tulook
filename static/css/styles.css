@@ -1,0 +1,52 @@
+section > h1{
+	font-size:1.5rem;
+	font-weight:bold;
+}
+figure h2,
+.lista_productos h2{
+	font-size:1.2rem;
+	font-weight:bold;
+	margin-bottom:0;
+}
+ul{
+	list-style:none;
+}
+img{
+	width:100%;
+}
+.lista li{
+	margin:0 0 20px;
+}
+.lista li:last-child{
+	margin-bottom:0;
+}
+.producto span{
+	font-weight:bold;
+}
+.contacto textarea{
+	min-height:150px;
+}
+.contacto button[type="submit"]{
+	float:right;
+}
+.lista_productos h2{
+	margin-top:-5px;
+}
+.lista_productos img{
+	margin-bottom:10px;
+}
+.lista_productos li{
+	border-bottom:rgba(0,0,0,.3) solid thin;
+	padding:10px 0 0;
+	display:inline-block;
+}
+.lista_productos li:last-child{
+	border-bottom:transparent;
+}
+@media only screen and (min-width:64.063em){
+	ul.promociones{
+	    columns: 2;
+	    -webkit-columns: 2;
+	    -moz-columns: 2;
+	}
+}
