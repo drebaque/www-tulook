@@ -173,4 +173,9 @@ DEFAULT_FROM_EMAIL = 'drebaque@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'drebaque@gmail.com'
-EMAIL_HOST_PASSWORD = 'woodkey429'
+EMAIL_HOST_PASSWORD = 'contraseña'
+
+try:
+    from settings_local import *
+except ImportError:
+    pass
