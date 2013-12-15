@@ -1,12 +1,93 @@
-section > h1{
-	font-size:1.5rem;
+/*nuevos seteos para estilos de fundation*/
+.top-bar .toggle-topbar.menu-icon a{
+	color:#D9005B;
+}
+.top-bar.expanded .title-area{
+	background:#BAEEFF;
+}
+.top-bar .toggle-topbar.menu-icon a span {
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 16px;
+    height: 0px;
+    box-shadow: 0px 10px 0px 1px #D9005B, 
+    0px 16px 0px 1px #D9005B, 
+    0px 22px 0px 1px #D9005B;
+}
+.top-bar{
+	height:46px;
+	background:#fff;
+	border-bottom:#000 solid thin;
+	margin-bottom:5px;
+}
+.top-bar .name h1 a{
+	color:#000;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size:40px;
+}
+.top-bar-section li a:not(.button){
+	background:#fff;
+	font-family: Georgia,serif;
+	font-style:italic;
+	color:#000;
+	font-size:16px;
+}
+.top-bar-section li a:hover:not(.button){
+	color:#fff;
+	background:#E33D88;
+}
+.panel.callout a{
+	color:#D9005B;
+	font-size:14px;
+}
+.panel.callout,
+.panel{
+	border:#BAEEFF solid thin;
+	background:transparent;
+}
+button,
+.button{
+	background:#D9005B;
+	font-family:Georgia,serif;
 	font-weight:bold;
+	font-style:italic;
+}
+button:hover,
+.button:hover{
+	background:#CE0056;
+}
+/**/
+body{
+	border-top:#FD5EB0 solid 2px;
+	padding-top:5px;
+}
+header img{
+	height:400px;
+	width:100%;
+	-webkit-filter: saturate(200%);
+	-moz-filter: saturate(200%);
+	filter: saturate(200%);
+}
+main{
+	padding-top:20px;
+}
+section > h1,
+.producto h1{
+	font-size:1.8rem;
+	font-weight:bold;
+	font-family: 'Life Savers', cursive;
+	color:#4878C9;
+}
+figure img{
+	border:#BAEEFF 4px solid;
 }
 figure h2,
 .lista_productos h2{
 	font-size:1.2rem;
 	font-weight:bold;
 	margin-bottom:0;
+	color:#DB0465;
 }
 ul{
 	list-style:none;
@@ -14,8 +95,21 @@ ul{
 img{
 	width:100%;
 }
+small{
+	font-size:80%;
+}
+footer{
+	background:#F9EFEC;
+	margin:30px 0;
+	border-radius:5px;
+	padding:20px 0 0;
+	font-family:Georgia,serif;
+	font-style:italic;
+}
 .lista li{
+	color:#D9005B;
 	margin:0 0 20px;
+	list-style:disc;
 }
 .lista li:last-child{
 	margin-bottom:0;
@@ -36,12 +130,23 @@ img{
 	margin-bottom:10px;
 }
 .lista_productos li{
-	border-bottom:rgba(0,0,0,.3) solid thin;
+	border-bottom:#FD5EB0 solid thin;
 	padding:10px 0 0;
 	display:inline-block;
 }
+p{
+	font-family:Georgia,serif;
+	color:#666;
+}
 .lista_productos li:last-child{
 	border-bottom:transparent;
+}
+.lista_productos span,
+.producto span{
+	font-weight:bold;
+	color:#4878C9;
+	font-size:18px;
+	font-family:sans-serif;
 }
 @media only screen and (min-width:64.063em){
 	ul.promociones{
