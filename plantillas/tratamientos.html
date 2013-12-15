@@ -1,21 +1,25 @@
 <!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tu look</title>
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/foundation.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<script src="js/modernizr.js"></script>
-	</head>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu look</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
   <body>
+    
     <header class="row">
 		<nav class="top-bar" data-topbar>
 	        <ul class="title-area">
 	          <li class="name">
 	            <h1>
-	              <a href="#">
+	              <a href="/inicio">
 	                Tu look
 	              </a>
 	            </h1>
@@ -24,19 +28,17 @@
 	        </ul>
 	        <div class="top-bar-section">
 	          <ul class="right">
-				<li><a href="/productos">Productos</a></li>
-				<li><a href="/servicios">Servicios</a></li>
-				<li><a href="/tratamientos">Tratamientos</a></li>
-				<li><a href="/terapias">Terapias</a></li>
-				<li><a href="/promociones">Promociones</a></li>		
-				<li><a href="/marcas">Marcas</a></li>						
-				<li><a href="/contacto">Contacto</a></li>
+                  <li><a href="/productos">Productos</a></li>
+                  <li><a href="/servicios">Servicios</a></li>
+                  <li><a href="/tratamientos">Tratamientos</a></li>
+                  <li><a href="/terapias">Terapias</a></li>
+                  <li><a href="/contacto">Contacto</a></li>
 	          </ul>
 	        </div>
      	</nav>
 		<div class="row">
 			<div class="large-12 columns">
-				<img src="http://placehold.it/1600x600&text=Tratamientos">
+				<img height="300" src="http://thetopview.files.wordpress.com/2010/10/coloured-stones1.jpg">
 			</div>
 		</div>
     </header>
@@ -47,27 +49,27 @@
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-              		{% for elemento in productos %}
-					<li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</strong></li>
+              		
+					{% for elemento in productos %}
+						<li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</strong></li>
 					{% endfor %}
 					<!--
-					<li><strong>Nombre tratamiento 1</strong></li>
-					<li><strong>Nombre tratamiento 2</strong></li>
-					<li><strong>Nombre tratamiento 3</strong></li>
-					<li><strong>Nombre tratamiento 4</strong></li>
-					<li><strong>Nombre tratamiento 5</strong></li>
-					<li><strong>Nombre tratamiento 6</strong></li>
-					<li><strong>Nombre tratamiento 7</strong></li>
-					<li><strong>Nombre tratamiento 8</strong></li>-->
+					<li>Nombre tratamiento 1</li>
+					<li>Nombre tratamiento 2</li>
+					<li>Nombre tratamiento 3</li>
+					<li>Nombre tratamiento 4</li>
+					<li>Nombre tratamiento 5</li>
+					<li>Nombre tratamiento 6</li>
+					<li>Nombre tratamiento 7</li>
+					<li>Nombre tratamiento 8</li>-->
 				</ul>
             </div>
           </div>
     	</section>
     </main>
-
+	<br>
 	<footer class="row">
 	    <div class="large-12 columns">
-	      <hr />
 	      <div class="row">
 	        <div class="large-6 columns">
 	          <p>Tu look - 2013</p>

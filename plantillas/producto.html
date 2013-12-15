@@ -1,11 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tu look</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/modernizr.js"></script>
   </head>
@@ -16,7 +19,7 @@
 	        <ul class="title-area">
 	          <li class="name">
 	            <h1>
-	              <a href="#">
+	              <a href="/inicio">
 	                Tu look
 	              </a>
 	            </h1>
@@ -25,12 +28,11 @@
 	        </ul>
 	        <div class="top-bar-section">
 	          <ul class="right">
-				<li><a href="/productos">Productos</a></li>
-				<li><a href="/servicios">Servicios</a></li>
-				<li><a href="/tratamientos">Tratamientos</a></li>
-				<li><a href="/terapias">Terapias</a></li>
-				<li><a href="/promociones">Promociones</a></li>				
-				<li><a href="/contacto">Contacto</a></li>
+                  <li><a href="/productos">Productos</a></li>
+                  <li><a href="/servicios">Servicios</a></li>
+                  <li><a href="/tratamientos">Tratamientos</a></li>
+                  <li><a href="/terapias">Terapias</a></li>
+                  <li><a href="/contacto">Contacto</a></li>
 	          </ul>
 	        </div>
      	</nav>
@@ -40,31 +42,30 @@
     	<section class="row producto">
     		<div class="large-6 columns">
     			<br>
-    			<!--img src=""-->
+    			<!--img src='{{elemento.logo.url}}'-->
 		    	<img src="img/404.jpg">
     		</div>
     		<div class="large-6 columns">
 		    	<h1>{{producto.nombre}}</h1>	
-		    	<h1>Nombre producto</h1>
+		    	<!--h1>Nombre producto</h1-->
 		    	<div class="panel">
-		    		<p>{{producto.descripcion}}</p>
+		    		<!--p>{{producto.descripcion}}</p>
 					<p>Precio: {{producto.precio}}</p>
 					<p>Categoría a la que pertenece: {{producto.categoria.nombre}}</p>
 					<p>Marca: {{producto.marca.nombre}}</p>
-					<p>{{producto.marca.logo}}</p>
-		    		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit soluta veniam tempora temporibus repellat molestias nihil dicta.</p>
-					<p><span>Precio:</span> $100</p>
-					<p><span>Categoría:</span> categoría a</p>
-					<p><span>Marca:</span> Marca X</p>
-					<p>Logo</p>-->
+					<p>{{producto.marca.logo}}</p-->
+		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit soluta veniam tempora temporibus repellat molestias nihil dicta.</p>
+					<p><span>Precio:</span>{{producto.precio}}</p>
+					<p><span>Categoría:</span>{{producto.categoria.nombre}}</p>
+					<p><span>Marca:</span> {{producto.marca.nombre}}'</p>
+					<p><img src='{{producto.marca.logo.url}}'></p>
 		    	</div>
     		</div>
     	</section>
     </main>
-
+	<br>
 	<footer class="row">
 	    <div class="large-12 columns">
-	      <hr />
 	      <div class="row">
 	        <div class="large-6 columns">
 	          <p>Tu look - 2013</p>
