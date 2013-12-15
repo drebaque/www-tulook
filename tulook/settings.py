@@ -132,7 +132,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'south',
-    # 'imagekit',
+    'imagekit',
     'principal',
     'contact_form'
 )
@@ -169,11 +169,11 @@ LOGGING = {
 }
 
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'drebaque@gmail.com'
+DEFAULT_FROM_EMAIL = 'tulookup@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'drebaque@gmail.com'
-EMAIL_HOST_PASSWORD = 'contraseña'
+EMAIL_HOST_USER = 'tulookup@gmail.com'
+EMAIL_HOST_PASSWORD = 'webnatacha'
 
 try:
     from settings_local import *

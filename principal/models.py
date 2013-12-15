@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.contrib.auth.models import User
-# from PIL import Image
-# from imagekit.models import ImageSpecField
-# from imagekit.processors import ResizeToFill, Adjust
+from PIL import Image
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFill, Adjust
 
 class Categoria(models.Model):
 	idcategoria = models.IntegerField()
@@ -18,7 +18,7 @@ class Marca(models.Model):
 	nombre = models.CharField(max_length=30)
 	descripcion = models.TextField()
 	web = models.CharField(max_length=150)
-	# logo = models.ImageField(upload_to='logo')
+	logo = models.ImageField(upload_to='marcas')
 	datos_contacto = models.TextField()
 	telefono_contacto = models.CharField(max_length=15, default="0261-xxxxxxxxx")
 
@@ -30,7 +30,7 @@ class Producto(models.Model):
 	idproducto = models.IntegerField()
 	nombre = models.CharField(max_length=30)
 	descripcion = models.TextField()
-	# foto = models.ImageField(upload_to='producto')
+	foto = models.ImageField(upload_to='productos')
 	destacado = models.BooleanField()
 	precio = models.CharField(max_length=15, default="Consultar") #se puede poner por default: Consultar - y en alguna promo el valor que se desee
 	categoria = models.ForeignKey(Categoria, default=1)
@@ -43,7 +43,7 @@ class Promo(models.Model):
 	idpromo = models.IntegerField()
 	nombre = models.CharField(max_length=30)
 	descripcion = models.TextField()
-	# foto = models.ImageField(upload_to='producto') foto de los productos de la promo
+	foto = models.ImageField(upload_to='promos')
 	precio = models.CharField(max_length=15, default="Consultar") #se puede poner por default: Consultar - y en alguna promo el valor que se desee
 	fechainicio = models.DateField()
 	fechafinalizacion = models.DateField()
@@ -63,7 +63,7 @@ class DatosEmpresa(models.Model):
 	celular = models.CharField(max_length=15, default="0261-xxxxxxxxx")
 	horarios = models.CharField(max_length=30)
 	linkgooglemaps = models.CharField(max_length=100)
-	# fotomapa = models.ImageField(upload_to='empresa', verbose_name='mapa')
+	fotomapa = models.ImageField(upload_to='empresa', verbose_name='mapa')
 	usuario = models.ForeignKey(User)
 
 	def __unicode__(self):
