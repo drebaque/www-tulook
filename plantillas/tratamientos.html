@@ -7,13 +7,13 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/foundation.min.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="/static/js/modernizr.js"></script>
   </head>
   <body>
-    
+
     <header class="row">
 		<nav class="top-bar" data-topbar>
 	        <ul class="title-area">
@@ -49,7 +49,7 @@
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-              		
+
 					{% for elemento in productos %}
 						<li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</strong></li>
 					{% endfor %}
@@ -78,8 +78,8 @@
 	    </div>
 	</footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>

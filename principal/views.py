@@ -7,7 +7,8 @@ from django.template import RequestContext
 
 def index(request):
 	marca = Marca.objects.all()
-	return render_to_response('index.html',{'marca':marca})
+	promociones = Marca.objects.all()
+	return render_to_response('index.html',{'marca':marca, 'promociones':promociones})
 
 def productos(request):
 	productos = Producto.objects.exclude(categoria__nombre__in=['TRATAMIENTOS','TERAPIAS','SERVICIOS'])
