@@ -54,11 +54,11 @@
 					<p>Categoría a la que pertenece: {{producto.categoria.nombre}}</p>
 					<p>Marca: {{producto.marca.nombre}}</p>
 					<p>{{producto.marca.logo}}</p-->
-		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit soluta veniam tempora temporibus repellat molestias nihil dicta.</p>
+		    		<p>{{producto.descripcion}}</p>
 					<p><span>Precio:</span>{{producto.precio}}</p>
-					<p><span>Categoría:</span>{{producto.categoria.nombre}}</p>
-					<p><span>Marca:</span> {{producto.marca.nombre}}'</p>
-					<p><img src='{{producto.marca.logo.url}}'></p>
+					<!--p><span>Categoría:</span>{{producto.categoria.nombre}}</p-->
+					<p><span>Marca:</span> {{producto.marca.nombre}}</p>
+					<p><img src="{{producto.marca.logo.url}}"></p>
 		    	</div>
     		</div>
     	</section>

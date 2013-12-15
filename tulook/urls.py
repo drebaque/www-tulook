@@ -10,9 +10,9 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
 	url(r'^inicio/$', 'principal.views.index'),
-	url(r'^$', 'principal.views.lista_productos'),
-	url(r'^$', 'principal.views.lista_marcas'),
-	url(r'^$', 'principal.views.lista_datosempresa'),
+	#url(r'^$', 'principal.views.lista_productos'),
+	#url(r'^$', 'principal.views.lista_marcas'),
+	#url(r'^$', 'principal.views.lista_datosempresa'),
 	url(r'^productos/$', 'principal.views.productos'),
 	url(r'^categorias/$', 'principal.views.categorias'),
 	url(r'^marcas/$', 'principal.views.lista_marcas'),
@@ -23,8 +23,7 @@ urlpatterns = patterns('',
 	# url(r'^categorias/$', 'principal.views.lista_categorias'),
 	url(r'^categorias_productos/(?P<id_categoria>\d+)$','principal.views.detalle_categorias_productos'),
 	url(r'^productos/(?P<id_producto>\d+)$','principal.views.detalle_producto'),
-	url(r'^contacto/', 'principal.views.contacto'),
-	#url(r'^contacto/', include('contact_form.urls')),
+	url(r'^contacto/', include('contact_form.urls')),
 	# url(r'^tulook/', include('tulook.foo.urls')),
 
 	# Uncomment the admin/doc line below to enable admin documentation:
