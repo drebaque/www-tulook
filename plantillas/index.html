@@ -24,7 +24,7 @@
 	              </a>
 	            </h1>
 	          </li>
-	          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+	          <li class="toggle-topbar menu-icon"><a href="/inicio"><span>menu</span></a></li>
 	        </ul>
 	        <div class="top-bar-section">
 	          <ul class="right">
@@ -49,11 +49,8 @@
           <div class="large-12 columns">
             <div class="callout panel">
               	<ul class="promociones">
-
 					{% for elemento in promociones %}
-					<li>
-						<a href="/promociones/{{elemento.id}}">{{elemento.nombre}}</a>
-					</li>
+					    <li <a href="/promociones/{{elemento.id}}">{{elemento.nombre}}</a></li>
 					{% endfor %}
 					<!--
 					<li><a href="">Nombre promoción 1</a></li>
@@ -71,7 +68,6 @@
     	<section class="row">
 			<h1>Empresas que nos acompañan</h1>
 			<ul>
-
 				{% for elemento in marca %}
 				<li class="medium-3 columns">
 					<figure>

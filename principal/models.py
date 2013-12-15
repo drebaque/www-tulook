@@ -16,15 +16,16 @@ class Categoria(models.Model):
 class Marca(models.Model):
 	idmarca = models.IntegerField()
 	nombre = models.CharField(max_length=30)
-	descripcion = models.TextField()
+	descripcion = models.CharField(max_length=120)
+	#descripcionlarga = models.TextField()
 	web = models.CharField(max_length=150)
-	logo = models.ImageField(upload_to='marcas')
+	logo = models.ImageField(upload_to='marcas', help_text = "subir lgo de la marca")
 	datos_contacto = models.TextField()
 	telefono_contacto = models.CharField(max_length=15, default="0261-xxxxxxxxx")
+	#imagen_miniatura = ImageSpecField([Adjust(sharpness=1.1), ResizeToFill(50,50)], source='logo', format = 'JPEG')
 
 	def __unicode__(self):
 		return self.nombre
-
 
 class Producto(models.Model):
 	idproducto = models.IntegerField()
