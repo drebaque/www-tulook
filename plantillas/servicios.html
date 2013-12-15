@@ -49,11 +49,8 @@
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-
 					{% for elemento in productos %}
-					<li>
-						<li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</strong></li>
-					</li>
+					    <li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</strong></li>
 					{% endfor %}
 					<!--
 					<li>Nombre servicio 1</li>

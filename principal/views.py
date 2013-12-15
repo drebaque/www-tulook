@@ -7,7 +7,7 @@ from django.template import RequestContext
 
 def index(request):
 	marca = Marca.objects.all()
-	promociones = Marca.objects.all()
+	promociones = Promo.objects.all()
 	return render_to_response('index.html',{'marca':marca, 'promociones':promociones})
 
 def productos(request):
