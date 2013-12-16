@@ -7,8 +7,8 @@ from django.template import RequestContext
 
 def index(request):
 	marca = Marca.objects.all()
-	promociones = Promo.objects.all()
-	return render_to_response('index.html',{'marca':marca, 'promociones':promociones}, context_instance=RequestContext(request))
+	promoc = Promo.objects.all()
+	return render_to_response('index.html',{'marca':marca, 'promoc':promoc}, context_instance=RequestContext(request))
 
 def productos(request):
 	productos = Producto.objects.exclude(categoria__nombre__in=['TRATAMIENTOS','TERAPIAS','SERVICIOS'])
@@ -55,6 +55,10 @@ def servicios(request):
 	productos = Producto.objects.filter(categoria__nombre='SERVICIOS')
 	return render_to_response('servicios.html',{'productos':productos})
 
-def promociones(request):
-	promociones = Promo.objects.all()
-	return render_to_response('promociones.html',{'promociones':promociones})
+def promociones(request, id_promo):
+	dato = get_object_or_404(Promo, pk=id_promo)
+	return render_to_response('promociones.html',{'dato':dato}, context_instance=RequestContext(request))
+
+#def promociones(request):
+#	promociones = Promo.objects.all()
+#	return render_to_response('promociones.html',{'promociones':promociones})

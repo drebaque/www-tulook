@@ -39,16 +39,101 @@
     </header>
 
     <main>
+    	<section class="row producto">
+    		<div class="large-6 columns">
+    			<br>
+    			<!--img src='{{elemento.foto.url}}'-->
+		    	<img src="{{dato.foto.url}}">
+    		</div>
+    		<div class="large-6 columns">
+		    	<h1>{{dato.nombre}}</h1>
+		    	<!--h1>Nombre producto</h1-->
+		    	<div class="panel">
+		    		<!--p>{{producto.descripcion}}</p>
+					<p>Precio: {{producto.precio}}</p>
+					<p>Categoría a la que pertenece: {{producto.categoria.nombre}}</p>
+					<p>Marca: {{producto.marca.nombre}}</p>
+					<p>{{producto.marca.logo}}</p-->
+		    		<p>{{dato.descripcion}}</p>
+		    		<p><span>Inicia el:</span> {{dato.fechainicio}}</p>
+		    		<p><span>Finaliza el:</span>{{dato.fechafinalizacion}}</p>
+					<p><span>Precio: </span><a href="/contacto">{{dato.precio}}</a></p>
+					<!--p><span>Categoría:</span>{{producto.categoria.nombre}}</p>
+					<p><span>Este producto pertenece a:</span> {{producto.marca.nombre}}</p>
+					<p><img src="{{producto.marca.logo.url}}"></p-->
+		    	</div>
+    		</div>
+    	</section>
+    </main>
+	<br>
+	<footer class="row">
+	    <div class="large-12 columns">
+	      <div class="row">
+	        <div class="large-6 columns">
+	          <p>Tu look - 2013</p>
+	        </div>
+	      </div>
+	    </div>
+	</footer>
+
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+<!--doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu look</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/foundation.min.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="/static/js/modernizr.js"></script>
+  </head>
+  <body>
+
+    <header class="row">
+		<nav class="top-bar" data-topbar>
+	        <ul class="title-area">
+	          <li class="name">
+	            <h1>
+	              <a href="/inicio">
+	                Tu look
+	              </a>
+	            </h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+	        </ul>
+	        <div class="top-bar-section">
+	          <ul class="right">
+                  <li><a href="/productos">Productos</a></li>
+                  <li><a href="/servicios">Servicios</a></li>
+                  <li><a href="/tratamientos">Tratamientos</a></li>
+                  <li><a href="/terapias">Terapias</a></li>
+                  <li><a href="/contacto">Contacto</a></li>
+	          </ul>
+	        </div>
+     	</nav>
+    </header>
+
+    <main>
     	<section class="row">
     	<h1>Nuestras Promociones</h1>
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-
-					{% for elemento in productos %}
+					{% for elemento in promociones %}
                         <li><strong>{{elemento.nombre}}</strong></li>
 					{% endfor %}
-					<!--
+
 					<li>Nombre Promoción 1</li>
 					<li>Nombre Promoción 2</li>
 					<li>Nombre Promoción 3</li>
@@ -56,7 +141,7 @@
 					<li>Nombre Promoción 5</li>
 					<li>Nombre Promoción 6</li>
 					<li>Nombre Promoción 7</li>
-					<li>Nombre Promoción 8</li>-->
+					<li>Nombre Promoción 8</li>
 				</ul>
             </div>
           </div>
@@ -79,4 +164,4 @@
       $(document).foundation();
     </script>
   </body>
-</html>
+</html-->

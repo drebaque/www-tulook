@@ -42,8 +42,8 @@
     	<section class="row producto">
     		<div class="large-6 columns">
     			<br>
-    			<!--img src='{{elemento.logo.url}}'-->
-		    	<img src="/static/img/404.jpg">
+    			<!--img src='{{elemento.foto.url}}'-->
+		    	<img src="{{producto.foto.url}}">
     		</div>
     		<div class="large-6 columns">
 		    	<h1>{{producto.nombre}}</h1>
@@ -55,9 +55,9 @@
 					<p>Marca: {{producto.marca.nombre}}</p>
 					<p>{{producto.marca.logo}}</p-->
 		    		<p>{{producto.descripcion}}</p>
-					<p><span>Precio:</span>{{producto.precio}}</p>
+					<p><span>Precio: </span><a href="/contacto">{{producto.precio}}</a></p>
 					<!--p><span>Categoría:</span>{{producto.categoria.nombre}}</p-->
-					<p><span>Marca:</span> {{producto.marca.nombre}}</p>
+					<p><span>Este producto pertenece a:</span> {{producto.marca.nombre}}</p>
 					<p><img src="{{producto.marca.logo.url}}"></p>
 		    	</div>
     		</div>
