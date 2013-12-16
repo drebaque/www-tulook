@@ -42,13 +42,13 @@
 		<section class="section row contacto">
           <h1 class="title">Comunicate con nosotros</h1>
           <div class="content" data-slug="panel1">
-            <form>
+            <form action="" method="post">{% csrf_token %}
               <div class="row collapse">
                 <div class="large-2 columns">
                   <label class="inline">Tu nombre</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourName" placeholder="Nombre Apellido">
+                  <input type="text" id="yourName" placeholder="Nombre Apellido" required="required" name="name">
                 </div>
               </div>
               <div class="row collapse">
@@ -56,11 +56,11 @@
                   <label class="inline">Tu email</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourEmail" placeholder="correo@ejemplo.com">
+                  <input type="text" id="yourEmail" placeholder="correo@ejemplo.com" required="required" name="email">
                 </div>
               </div>
               <label>Mensaje</label>
-              <textarea name="" id=""></textarea>
+              <textarea name="body" id=""></textarea>
               <button type="submit" class="radius button">Enviar</button>
             </form>
           </div>
