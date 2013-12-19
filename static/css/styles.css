@@ -1,9 +1,9 @@
 /*nuevos seteos para estilos de fundation*/
 .top-bar .toggle-topbar.menu-icon a{
-	color:#D9005B;
+	color:#CC9900;
 }
 .top-bar.expanded .title-area{
-	background:#BAEEFF;
+	background:#CC9900;
 }
 .top-bar .toggle-topbar.menu-icon a span {
     position: absolute;
@@ -11,9 +11,9 @@
     display: block;
     width: 16px;
     height: 0px;
-    box-shadow: 0px 10px 0px 1px #D9005B, 
-    0px 16px 0px 1px #D9005B, 
-    0px 22px 0px 1px #D9005B;
+    box-shadow: 0px 10px 0px 1px #CC9900,
+    0px 16px 0px 1px #CC9900,
+    0px 22px 0px 1px #CC9900;
 }
 .top-bar{
 	height:46px;
@@ -22,7 +22,7 @@
 	margin-bottom:5px;
 }
 .top-bar .name h1 a{
-	color:#000;
+	color:#CC9900;
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-size:40px;
 }
@@ -35,31 +35,31 @@
 }
 .top-bar-section li a:hover:not(.button){
 	color:#fff;
-	background:#E33D88;
+	background:#CC9900;
 }
 .panel.callout a{
-	color:#D9005B;
+	color:#CC9900;
 	font-size:14px;
 }
 .panel.callout,
 .panel{
-	border:#BAEEFF solid thin;
+	border:#CC9900 solid thin;
 	background:transparent;
 }
 button,
 .button{
-	background:#D9005B;
+	background:#CC9900;
 	font-family:Georgia,serif;
 	font-weight:bold;
 	font-style:italic;
 }
 button:hover,
 .button:hover{
-	background:#CE0056;
+	background:#CC9900;
 }
 /**/
 body{
-	border-top:#FD5EB0 solid 2px;
+	border-top:#CC9900 solid 2px;
 	padding-top:5px;
 }
 header img{
@@ -107,7 +107,7 @@ footer{
 	font-style:italic;
 }
 .lista li{
-	color:#D9005B;
+	color:#CC9900;
 	margin:0 0 20px;
 	list-style:disc;
 }
@@ -130,7 +130,7 @@ footer{
 	margin-bottom:10px;
 }
 .lista_productos li{
-	border-bottom:#FD5EB0 solid thin;
+	border-bottom:#CC9900 solid thin;
 	padding:10px 0 0;
 	display:inline-block;
 }

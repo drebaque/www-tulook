@@ -38,7 +38,7 @@
      	</nav>
 		<div class="row">
 			<div class="large-12 columns">
-				<img height="300" src="http://thetopview.files.wordpress.com/2010/10/coloured-stones1.jpg">
+				<img height="300" src='/static/img/tapa.jpg'>
 			</div>
 		</div>
     </header>
@@ -49,9 +49,8 @@
           <div class="large-12 columns">
             <div class="callout panel lista">
               	<ul>
-
 					{% for elemento in productos %}
-                        <li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></strong></li>
+                        <li><strong><a href="/productos/{{elemento.id}}">{{elemento.nombre}}</a></strong>  ({{elemento.categoria.nombre}})</li>
 					{% endfor %}
 					<!--
 					<li><a href="">Nombre producto 1</a></li>
@@ -71,8 +70,8 @@
 	<footer class="row">
 	    <div class="large-12 columns">
 	      <div class="row">
-	        <div class="large-6 columns">
-	          <p>Tu look - 2013</p>
+	        <div class="large-12 columns">
+	          <p>Tu look - 2013   Atención a domicilio de 9 a 20 Hs.  Contacto: Natacha Soria   Cel. 0261-153136615   email: <a href="/contacto">tulookup@gmail.com</a></p>
 	        </div>
 	      </div>
 	    </div>
