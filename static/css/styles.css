@@ -64,9 +64,6 @@ body{
 }
 header img{
 	width:100%;
-	-webkit-filter: saturate(200%);
-	-moz-filter: saturate(200%);
-	filter: saturate(200%);
 }
 main{
 	padding-top:20px;
