@@ -46,6 +46,9 @@
 	border:#CC9900 solid thin;
 	background:transparent;
 }
+.panel img{
+	width:50%;
+}
 button,
 .button{
 	background:#CC9900;
@@ -63,11 +66,7 @@ body{
 	padding-top:5px;
 }
 header img{
-	height:400px;
 	width:100%;
-	-webkit-filter: saturate(200%);
-	-moz-filter: saturate(200%);
-	filter: saturate(200%);
 }
 main{
 	padding-top:20px;
