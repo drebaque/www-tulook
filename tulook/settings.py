@@ -3,7 +3,8 @@
 
 import os
 import sys
-_PATH = os.path.abspath(os.path.dirname(__file__))
+#_PATH = os.path.abspath(os.path.dirname(__file__))
+_PATH = os.path.dirname(os.path.dirname(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
