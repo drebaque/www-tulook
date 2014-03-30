@@ -3,8 +3,7 @@
 
 import os
 import sys
-#_PATH = os.path.abspath(os.path.dirname(__file__))
-_PATH = os.path.dirname(os.path.dirname(__file__))
+_PATH = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -67,7 +66,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = os.path.join(_PATH,'files','static')
+STATIC_ROOT = os.path.join(_PATH = os.path.dirname(os.path.dirname(__file__)),'files','static')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
